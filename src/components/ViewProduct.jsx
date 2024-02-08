@@ -30,7 +30,7 @@ const ViewProduct = () => {
                                                 <div class="card-body">
                                                     <h5 class="card-title">{value.name}</h5>
                                                     <p class="card-text">{value.price}</p>
-                                                    
+
                                                 </div>
                                             </div>
 
@@ -42,10 +42,10 @@ const ViewProduct = () => {
                         </div>
                     </div>
                 </div>
-                </div>
-
             </div>
-            )
+
+        </div>
+    )
 }
 
-            export default ViewProduct
+export default ViewProduct
