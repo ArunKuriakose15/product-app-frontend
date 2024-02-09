@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import NavBar from './NavBar'
 import axios from 'axios'
 
-
 const SearchProduct = () => {
     const [input, setInput] = new useState(
         {
@@ -15,7 +14,6 @@ const SearchProduct = () => {
 
     const [output, setOutput] = useState([]);
 
-
     const readValues = () => {
         console.log(input)
         axios.post("http://localhost:3001/api/product/search", input).then((response) => {
@@ -25,10 +23,10 @@ const SearchProduct = () => {
         })
     }
     useEffect(() => { readValues() }, [])
-  return (
-    <div>
-<NavBar/>        
-<div className="container">
+    return (
+        <div>
+            <NavBar />
+            <div className="container">
                 <div className="row">
                     <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
@@ -75,11 +73,8 @@ const SearchProduct = () => {
                     </div>
                 </div>
             </div>
-
-
-
-    </div>
-  )
+        </div>
+    )
 }
 
 export default SearchProduct
